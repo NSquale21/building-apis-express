@@ -1,0 +1,25 @@
+{
+  "name": "building_apis",
+  "version": "1.0.0",
+  "description": "Covalence Building APIs with ExpressJS Lab",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev" : "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NSquale21/building-apis-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSquale21/building-apis-express/issues"
+  },
+  "homepage": "https://github.com/NSquale21/building-apis-express#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  }
+}
