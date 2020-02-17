@@ -1,11 +1,15 @@
 {
-    "0": {
-        "name": "Nicole",
-        "chirp": "Aye!"
-    },
-    "1": {
-        "name": "Nicole",
-        "chirp": "Aw Yeah!"
-    },
-    "nextid": 3
+	"0": {
+		"username": "Kelly Kapoor",
+		"chirp": "I talk a lot, so I’ve learned to tune myself out."
+	},
+	"1": {
+		"username": "Kevin Malone",
+		"chirp": "I just want to lie on the beach and eat hot dogs. That’s all I’ve ever wanted."
+	},
+	"2": {
+		"username": "Michael Scott",
+		"chirp": "Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."
+	},
+	"nextid": 3
 }

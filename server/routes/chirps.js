@@ -5,10 +5,18 @@ const router = express.Router();
 
 router.get('/:id?', (req, res) => {
 	if (req.params.id) {
-		let chirp = chirpStore.GetChirp(req.params.id);
+		const chirp = chirpStore.GetChirp(req.params.id);
 		res.json(chirp);
 	} else {
-		let chirps = chirpStore.GetChirps();
+		const data = chirpStore.GetChirps();
+		const chirps = Object.keys(data).map(key => {
+			return {
+				id : key,
+				username: data[key].username,
+				chirp: data[key].chirp
+			}
+		});
+		chirps.pop();
 		res.json(chirps);
 	}
 });
