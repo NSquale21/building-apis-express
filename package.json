@@ -4,8 +4,8 @@
   "description": "Covalence Building APIs with ExpressJS Lab",
   "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "dev" : "nodemon server/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/server.js"
   },
   "repository": {
     "type": "git",
