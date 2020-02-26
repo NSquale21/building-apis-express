@@ -7,11 +7,11 @@ $('#post-chirp').click(e => {
 		chirp: $('[name="chirp"]').val()
 	};
 	$.ajax({
+		data,
 		url: '/api/chirps',
-		type: 'POST',
-		data
+		type: 'POST'
 	})
-	.then(res => {
+	.then(() => {
 		$('[name="username"]').val('');
 		$('[name="chirp"]').val('');
 		getChirps();
@@ -24,7 +24,6 @@ function getChirps() {
 		type: 'GET'
 	})
 	.then(chirps => {
-		console.log(chirps);
 		$('ul').empty();
 		chirps.forEach(chirp => {
 			$('ul').append(`
